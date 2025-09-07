@@ -24,7 +24,8 @@ FILEMAP = {
 SHEET_NAME = "annual mean"   # 你的年表 sheet 名
 
 # 流域边界（用相对路径）
-CATCHMENT_SHP = BASE_DIR / "catchments" / "hrs_467_catchms.shp"st.set_page_config(page_title="HRS | Annual Means (pre / tmax / tmin / sm)", layout="wide")
+CATCHMENT_SHP = BASE_DIR / "catchments" / "hrs_467_catchms.shp"
+st.set_page_config(page_title="HRS | Annual Means (pre / tmax / tmin / sm)", layout="wide")
 st.title("HRS Basin Annual Means (1950–2024): Temporal & Spatial Comparison")
 
 # -------------------- Loaders --------------------
@@ -316,3 +317,4 @@ with tab2:
             file_name=f"{var_for_map}_{year_for_map}_annual_mean_map.html",
             mime="text/html"
         )
+
